@@ -6,7 +6,7 @@ using System;
 
 namespace AdventOfCodeUnitTests;
 
-public class UnitTest1
+public class Day1UnitTests
 {
     [Fact]
     public async Task Day1TestAsync()
@@ -16,7 +16,6 @@ public class UnitTest1
         var (numIncreased, numDecreased) = Day1.CountChanges(data);
 
         Console.WriteLine(numIncreased);
-        Assert.NotNull(numIncreased);
 
         var numIncreasedWithWindow = Day1.CountChangesWithWindow(data, 3);
         Console.WriteLine($"IncreasesWithWindowSize: {numIncreasedWithWindow}");

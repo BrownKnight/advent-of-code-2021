@@ -148,7 +148,7 @@ public class Day4
             .Where(x => !x.Selected)
             .Sum(x => x.Number);
         var score = sumOfUnselectedNumbers * lastNumber;
-        
+
         return score;
     }
 
